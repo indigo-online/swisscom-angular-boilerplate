@@ -19,10 +19,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@swisscom/sdx/dist/js/webcomponents/webcomponents/assets",
+                "output": "assets"
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@swisscom/sdx/dist/css/webcomponents.css"
             ]
           },
           "configurations": {
@@ -59,7 +65,10 @@
               "buildTarget": "angular-boilerplate:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 3000
+          }
         },
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n"
@@ -74,9 +83,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"]
           }
         }
       }
