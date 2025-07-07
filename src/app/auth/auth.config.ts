@@ -7,7 +7,7 @@ export const authConfig: PassedInitialConfig = {
     redirectUrl: window.location.origin,
     postLogoutRedirectUri: window.location.origin,
     clientId: environment.clientId,
-    scope: 'openid profile roles email',
+    scope: 'openid profile roles email user_attributes',
     responseType: 'code',
     silentRenew: false, // disabled since CorpId doesn't support it yet
     renewTimeBeforeTokenExpiresInSeconds: 10,
