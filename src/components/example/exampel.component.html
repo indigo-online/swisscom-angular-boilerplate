@@ -1,4 +1,18 @@
-<sdx-button (click)="showText.set(!showText())" label="Exampel"></sdx-button>
+<div>
+  @if(userData()) {
+  <h2>
+    Hello
+    <span> {{ userData().given_name }}</span>
+  </h2>
+  <sdx-button (click)="logout()" label="Logout" theme="secondary"></sdx-button>
+  } @else {
+  <h2>Login</h2>
+  <sdx-button (click)="login()" label="Login"></sdx-button>
+  }
+
+  <h3>Lorem ipsum</h3>
+  <sdx-button (click)="showText.set(!showText())" label="Exampel"></sdx-button>
+</div>
 
 @if(showText()) {
 <p>This is a simple example</p>
