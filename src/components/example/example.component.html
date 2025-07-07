@@ -1,5 +1,5 @@
 <div>
-  @if(userData()) {
+  @if (userData()) {
   <h2>
     Hello
     <span> {{ userData().given_name }}</span>
@@ -11,9 +11,9 @@
   }
 
   <h3>Lorem ipsum</h3>
-  <sdx-button (click)="showText.set(!showText())" label="Exampel"></sdx-button>
+  <sdx-button (click)="showText.set(!showText())" label="Example"></sdx-button>
 </div>
 
-@if(showText()) {
+@if (showText()) {
 <p>This is a simple example</p>
 }
