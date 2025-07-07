@@ -1,9 +1,4 @@
-import {
-  Component,
-  CUSTOM_ELEMENTS_SCHEMA,
-  inject,
-  OnInit,
-} from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginResponse, OidcSecurityService } from 'angular-auth-oidc-client';
 
@@ -11,7 +6,6 @@ import { LoginResponse, OidcSecurityService } from 'angular-auth-oidc-client';
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.html',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class App implements OnInit {
   private readonly oidcSecurityService = inject(OidcSecurityService);
