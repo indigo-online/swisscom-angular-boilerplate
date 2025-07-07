@@ -2,6 +2,14 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
+## Setup
+
+SDX is in a private registry (bin.swisscom.com). Log in based on the information in `.npmrc` to access it:
+
+```bash
+npm login
+```
+
 ## Development server
 
 To start a local development server, run:
